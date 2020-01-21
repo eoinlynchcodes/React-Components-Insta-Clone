@@ -7,13 +7,15 @@ import "./Posts.css";
 const PostsPage = (props) => {
 
   console.log(props);
-  
+
   return (
     <div className="posts-container-wrapper">
       {/* map through data here */}
     </div>
   );
 };
+
+
 
 export default PostsPage;
 
