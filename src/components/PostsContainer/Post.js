@@ -7,6 +7,8 @@ import "./Posts.css";
 
 const Post = props => {
   
+  console.log(props.item.likes);
+
   return (
     <div className="post-border">
       <PostHeader
@@ -22,7 +24,7 @@ const Post = props => {
           src={props.item.imageUrl}
         />
       </div>
-      <LikeSection />
+      <LikeSection numberOfLikes={props.item.likes} />
       <CommentSection
         postId={props.item.imageUrl}
         comments={props.item.comments}

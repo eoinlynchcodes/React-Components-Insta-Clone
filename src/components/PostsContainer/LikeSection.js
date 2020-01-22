@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 
 const LikeSection = props => {
 
-const [ likecount, setLikecount ] = useState(0);
-
-// const likeButton = document.getElementsByClassName('likeButton');
-// likeButton.addEventListener('onClick', like());
-
-function like(event){
-console.log('love heart button works.');
-  return likecount + 1;
-}
+  const [ likecount, setLikecount ] = useState(props.numberOfLikes);
 
   return (
     <div>
@@ -19,8 +11,7 @@ console.log('love heart button works.');
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart"/>
-      <button onClick={like()} >Like</button>
+        <i className="far fa-heart" onClick={() => setLikecount(likecount + 1)} />
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />

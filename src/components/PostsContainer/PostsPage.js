@@ -2,6 +2,7 @@
 import React from "react";
 import Post from "./Post";
 import "./Posts.css";
+import LikeSection from "./LikeSection";
 
 // pass the data from App.js down as props then map through the data
 const PostsPage = (props) => {
@@ -10,7 +11,7 @@ const PostsPage = (props) => {
     <div className="posts-container-wrapper">   
       {
         props.data.map((item, key) => {
-          return <Post item={ item } key={key}/>
+          return <Post item={item} key={key}/>
         })
       }
     </div>

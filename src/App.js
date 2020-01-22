@@ -22,6 +22,7 @@ const App = () => {
       {/* Add components here  and pass props where appropriate */}
       <SearchBar />
       <PostsPage data={data} />
+      
     </div>
   );
 };
