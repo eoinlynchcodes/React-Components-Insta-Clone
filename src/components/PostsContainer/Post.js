@@ -7,7 +7,6 @@ import "./Posts.css";
 
 const Post = props => {
   
-  console.log(props.item.likes);
 
   return (
     <div className="post-border">
